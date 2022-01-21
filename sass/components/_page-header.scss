@@ -1,4 +1,6 @@
 .header-page__logo {
+  margin-top: 50px;
+  padding: auto;
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -34,10 +36,50 @@
     margin-left: 93px;
   } */
 }
-.site-nav-list > .site-nav-list__item {
+/* .site-nav-list > .site-nav-list__item {
   margin-left: 50px;
+} */
+/* Мобильное меню */
+.menu-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  fill: #212121;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
-/* .header-page {
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-button.is-open .icon-strip {
+  display: none;
+}
+
+.navigational-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  &is-open {
+    display: block;
+  }
+}
+
+/*{
   display: flex;
   align-items: center;
 
@@ -45,30 +87,38 @@
 
   padding-top: 32px;
   padding-bottom: 32px;
-}
+} */
 
 .header-border {
+  position: relative;
   border-bottom: 1px solid#ececec;
 }
 
-.contacts-list {
+.contacts-list /* {
   display: flex;
   margin: auto;
   margin-right: 0;
-}
+} */
 
 .contacts-list__svg-mail {
   margin-right: 10px;
   fill: currentColor;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 }
 .contacts-list__svg-telephone {
   margin-right: 10px;
   margin-left: 0px;
   fill: currentColor;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 }
-.contacts-list .contacts-list__item + .contacts-list__item {
+/* .contacts-list .contacts-list__item + .contacts-list__item {
   margin-left: 30px;
-}
+} */
 
 .site-nav-list__link-index {
   font-family: Roboto;
@@ -87,7 +137,11 @@
   &:focus {
     color: var(--accent-color);
   }
+
   &::after {
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
     position: relative;
     content: '';
     display: block;
@@ -235,4 +289,3 @@
     fill: var(--accent-color);
   }
 }
- */

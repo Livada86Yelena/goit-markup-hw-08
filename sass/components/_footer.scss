@@ -1,14 +1,10 @@
 .socials {
-  /* display: flex; */
-  align-items: baseline;
+  text-align: center;
 }
+/* display: flex; 
+  align-items: baseline;
+ */
 .coordinates__logo {
-  margin-top: 60px;
-  margin-left: 163px;
-  margin-right: 163px;
-  margin-top: 20px;
-  /* до 480px*/
-
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -51,10 +47,7 @@
   text-decoration: none;
 }
 /* Для 468 */
-.coordinates__link {
-  margin-left: 124px;
-  margin-right: 100px;
-}
+
 .coordinates__address {
   margin-top: 20px;
   margin-bottom: 9px;
@@ -67,10 +60,6 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-
-  /*480*/
-  margin-left: 164px;
-  margin-right: 124px;
 }
 .footer-mail {
   margin-top: 9px;
@@ -78,7 +67,8 @@
 }
 .sociality__title {
   /*480*/
-  margin: 60px 127px 20px 157px;
+  margin-top: 60px;
+  margin-bottom: 14px;
 
   font-family: Roboto;
   font-style: normal;
@@ -94,15 +84,17 @@
   }
 }
 .sociality__network {
-  /*480*/
-  margin-left: 127px;
+  /*
+  margin-left: 127px; */
 
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
 }
-.sociality 
+/* .sociality 
 
-  /* {
+   {
   margin-left: 70px;
 } */
 .sociality__link {
@@ -132,13 +124,11 @@
 
 //*Form-footer
 
-.form {
+/* .form {
   display: flex;
-  margin-left: 93px;
-}
+   margin-left: 93px; 
+} */
 .form-title {
-  margin: 60px 100px 20px 30px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -150,9 +140,10 @@
 }
 .fields__width {
   width: 100%;
+  margin-bottom: 20px;
 }
 .fields__letter {
-  width: 450px;
+  /* width: 450px; */
   height: 50px;
   left: 815px;
   top: 2787px;
@@ -171,6 +162,7 @@
   position: relative;
   align-items: center;
   display: flex;
+  margin: auto;
   width: 200px;
   height: 50px;
   padding: 0;
@@ -200,8 +192,8 @@
   padding: 0;
 }
 
-.fields {
-  /*display: flex;*/
+/* .fields  {
+  display: flex;
 
   align-items: baseline;
-}
+} */
