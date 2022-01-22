@@ -62,9 +62,11 @@ ul {
 
 .menu-button {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  z-index: 2;
+  display: inline-flex;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
   padding: 0;
   margin: 0;
   border: none;
@@ -89,14 +91,18 @@ ul {
 }
 
 .navigational-menu {
-  display: none;
+  width: 450px;
+  height: 796px;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
+  z-index: 1;
+  background-color: white;
+  text-align: center;
 }
 
-.navigational-menu.is-open {
+.navigational-menu .is-open {
   display: block;
 }
 
@@ -241,6 +247,12 @@ ul {
   background-color: var(--accent-color);
   border-radius: 4px;
   top: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .site-nav-list__link-portffolio::after {
+    display: none;
+  }
 }
 
 .site-nav-list__link-contacts {
@@ -1177,8 +1189,8 @@ br {
 .modal {
   position: absolute;
   padding: 40px 38px 40px 41px;
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   background-color: #ffffff;
   top: 50%;
   left: 50%;

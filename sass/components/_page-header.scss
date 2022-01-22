@@ -45,9 +45,11 @@
 }
 .menu-button {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  z-index: 2;
+  display: inline-flex;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
   padding: 0;
   margin: 0;
   border: none;
@@ -65,18 +67,23 @@
 .menu-button.is-open .icon-cross {
   display: block;
 }
+
 .menu-button.is-open .icon-strip {
   display: none;
 }
 
 .navigational-menu {
-  display: none;
+  width: 450px;
+  height: 796px;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
+  z-index: 1;
+  background-color: white;
+  text-align: center;
 
-  &.is-open {
+  & .is-open {
     display: block;
   }
 }
@@ -211,7 +218,11 @@
   &:focus {
     color: var(--accent-color);
   }
+
   &::after {
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
     position: relative;
     content: '';
     display: block;
