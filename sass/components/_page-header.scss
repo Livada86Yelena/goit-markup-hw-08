@@ -40,6 +40,9 @@
   margin-left: 50px;
 } */
 /* Мобильное меню */
+.header-page {
+  position: relative;
+}
 .menu-button {
   position: absolute;
   top: 10px;
@@ -51,7 +54,6 @@
   background-color: transparent;
   fill: #212121;
 
-  &:hover,
   &:focus {
     fill: var(--accent-color);
   }
@@ -74,7 +76,7 @@
   left: 0;
   width: 100%;
 
-  &is-open {
+  &.is-open {
     display: block;
   }
 }
@@ -90,7 +92,6 @@
 } */
 
 .header-border {
-  position: relative;
   border-bottom: 1px solid#ececec;
 }
 

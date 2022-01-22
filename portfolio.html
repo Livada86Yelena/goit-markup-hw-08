@@ -16,7 +16,7 @@
     <header class="header-border">
         <div class="container">
             <nav class="header-page">
-                <a class="header-psge__logo" href=""><span class="header-page__logo-web">Web</span><span class="header-page__logo-studio">Studio</span></a>
+                <a class="header-page__logo" href=""><span class="header-page__logo-web">Web</span><span class="header-page__logo-studio">Studio</span></a>
                 <ul class="site-nav-list">
                     <li class="site-nav-list__item"><a class="site-nav-list__link" href="./index.html" class="active">Студия</a></li>
                     <li class="site-nav-list__item"><a class="site-nav-list__link-portffolio" href="./portfolio.html" class="active">Портфолио</a></li>
@@ -241,11 +241,13 @@
                 <form>
                     <p class="form-title">Подпишитесь на рассылку</p>
 
-                    <div class="fields"><label for="E-mail">
-                            <input type="E-mail" name="E-mail" placeholder="E-mail" id="E-mail"
-                                class="fields__letter"></label>
-                        <button type="submit" class="fields__button"><span
-                                class="fields__button--title">Подписаться</span>
+                    <div class="fields">
+                        <div class="fields__width">
+                            <label for="E-mail">
+                    
+                                <input type="E-mail" name="E-mail" placeholder="E-mail" id="E-mail" class="fields__letter"></label>
+                        </div>
+                        <button type="submit" class="fields__button"><span class="fields__button--title">Подписаться</span>
                             <svg class="fields__button--svg" width="24" height="24">
                                 <use href="./images/symbol-defs.svg#icon-icon-send"></use>
                             </svg>

@@ -138,9 +138,12 @@
 
 .button-block {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 
   margin-bottom: 56px;
+}
+.button-block__item {
+  margin-bottom: 15px;
 }
 .button-block .button-block__item:not(:last-child) {
   margin-right: 8px;
