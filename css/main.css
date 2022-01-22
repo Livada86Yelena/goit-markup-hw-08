@@ -52,9 +52,25 @@ ul {
   } */
 }
 
-/* .site-nav-list > .site-nav-list__item {
+/* .site-nav-list > 
+
+.site-nav-list__item {
   margin-left: 50px;
-} */
+} 
+*/
+.site-nav-list {
+  margin-top: 48px;
+}
+
+.site-nav-list__item {
+  position: relative;
+  margin-left: 40px;
+}
+
+.site-nav-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 /* Мобильное меню */
 .header-page {
   position: relative;
@@ -91,18 +107,19 @@ ul {
 }
 
 .navigational-menu {
+  position: fixed;
+  display: none;
   width: 450px;
   height: 796px;
   position: absolute;
-  top: 100%;
+  top: 10;
   left: 0;
   width: 100%;
   z-index: 1;
   background-color: white;
-  text-align: center;
 }
 
-.navigational-menu .is-open {
+.navigational-menu.is-open {
   display: block;
 }
 
@@ -117,6 +134,11 @@ ul {
 } */
 .header-border {
   border-bottom: 1px solid #ececec;
+}
+
+.contacts-list {
+  margin-top: 302px;
+  margin-left: 40px;
 }
 
 .contacts-list
@@ -150,7 +172,8 @@ ul {
 .site-nav-list__link-index {
   font-family: Roboto;
   font-weight: 500;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 40px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -185,7 +208,8 @@ ul {
 .site-nav-list__link {
   font-family: Roboto;
   font-weight: 500;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 40px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -206,7 +230,8 @@ ul {
 .site-nav-list__link-portfolio {
   font-family: Roboto;
   font-weight: 500;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 40px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -223,7 +248,8 @@ ul {
 .site-nav-list__link-portffolio {
   font-family: Roboto;
   font-weight: 500;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 40px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -258,7 +284,8 @@ ul {
 .site-nav-list__link-contacts {
   font-family: Roboto;
   font-weight: 500;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 40px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -285,7 +312,8 @@ ul {
 .contacts-list__e-mail-main {
   font-family: Roboto;
   font-weight: 500;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 34px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -317,6 +345,35 @@ ul {
 .contacts-list__phone:hover, .contacts-list__phone:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
+}
+
+@media screen and (max-width: 480px) {
+  .contacts-list__phone {
+    display: none;
+  }
+}
+
+.m-mobile-network {
+  display: flex;
+  margin-left: 40px;
+  margin-right: 83px;
+  margin-top: 64px;
+  margin-bottom: 48px;
+}
+
+.m-mobile-network > .mobile-network:not(:last-child) {
+  margin-right: 20px;
+}
+
+.mobile-network .item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  text-decoration: none;
 }
 
 .hero-overlay {
