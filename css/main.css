@@ -46,6 +46,7 @@ ul {
 
 .site-nav-list {
   text-decoration: none;
+  margin-bottom: 302px;
   /*  & {
     display: flex;
     margin-left: 93px;
@@ -137,8 +138,11 @@ ul {
 }
 
 .contacts-list {
-  margin-top: 302px;
   margin-left: 40px;
+}
+
+.contacts-list > .contacts-list__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .contacts-list
@@ -332,7 +336,8 @@ ul {
 .contacts-list__phone {
   font-family: Roboto;
   font-weight: 500;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 34px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -349,7 +354,8 @@ ul {
 
 @media screen and (max-width: 480px) {
   .contacts-list__phone {
-    display: none;
+    margin-top: 250px;
+    margin-bottom: 32px;
   }
 }
 
@@ -1297,6 +1303,12 @@ br {
   color: #212121;
 }
 
+@media screen and (max-width: 480px) {
+  .modal-tittle {
+    display: block;
+  }
+}
+
 .modal-send__button {
   display: block;
   align-items: center;
@@ -1351,6 +1363,12 @@ br {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 480px) {
+  .form-policy__icon {
+    margin-right: 0;
+  }
+}
+
 .form-policy__checkbox-form:checked + .form-policy__icon {
   background-color: var(--accent-color);
   background-image: url("../images/SVG/icon-check-2.svg");
@@ -1370,8 +1388,21 @@ br {
   margin-left: 3px;
 }
 
+@media screen and (max-width: 480px) {
+  .form-policy__contract {
+    font-size: 12px;
+  }
+}
+
 .form-policy {
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .form-policy {
+    display: block;
+    margin-left: 0;
+  }
 }
 
 .modal-send__button {
@@ -1479,6 +1510,12 @@ br {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (max-width: 480px) {
+  .form-policy__text {
+    font-size: 12px;
+  }
 }
 
 .form-modal__commenting-field:hover,

@@ -83,6 +83,10 @@
   letter-spacing: 0.03em;
 
   color: #757575;
+
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+  }
 }
 .form-modal__commenting-field:hover,
 .form-modal__commenting-field:focus {

@@ -35,6 +35,10 @@
   letter-spacing: 0.03em;
 
   color: #212121;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
 }
 
 .modal-send__button {

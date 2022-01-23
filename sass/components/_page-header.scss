@@ -30,6 +30,7 @@
 
 .site-nav-list {
   text-decoration: none;
+  margin-bottom: 302px;
 
   /*  & {
     display: flex;
@@ -119,8 +120,10 @@
   border-bottom: 1px solid#ececec;
 }
 .contacts-list {
-  margin-top: 302px;
   margin-left: 40px;
+}
+.contacts-list > .contacts-list__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 .contacts-list /* {
   display: flex;
@@ -310,8 +313,10 @@
 }
 .contacts-list__phone {
   font-family: Roboto;
+
   font-weight: 500;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 34px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -326,10 +331,14 @@
     color: var(--accent-color);
     fill: var(--accent-color);
   }
+}
+.contacts-list__phone {
   @media screen and (max-width: 480px) {
-    display: none;
+    margin-top: 250px;
+    margin-bottom: 32px;
   }
 }
+
 .m-mobile-network {
   display: flex;
   margin-left: 40px;

@@ -26,6 +26,10 @@
   margin-right: 10px;
   border: 2px solid #212121;
   border-radius: 4px;
+
+  @media screen and (max-width: 480px) {
+    margin-right: 0;
+  }
 }
 
 .form-policy__checkbox-form:checked + .form-policy__icon {
@@ -47,9 +51,18 @@
   letter-spacing: 0.03em;
   color: var(--accent-color);
   margin-left: 3px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+  }
 }
 .form-policy {
   margin-bottom: 30px;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+    margin-left: 0;
+  }
 }
 .modal-send__button {
   display: block;
