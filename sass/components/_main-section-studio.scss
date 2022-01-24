@@ -8,7 +8,7 @@
     margin: -15px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
     flex-wrap: inherit;
@@ -251,7 +251,7 @@ br {
     flex-wrap: wrap;
     margin: -15px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     flex-wrap: inherit;
     margin: 0;
   }

@@ -755,7 +755,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .technology-list {
     display: flex;
     justify-content: space-between;
@@ -1003,7 +1003,7 @@ br {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .team-list {
     flex-wrap: inherit;
     margin: 0;
@@ -1436,7 +1436,6 @@ br {
   }
 }
 
-/* */
 .portfolio-projects__image {
   position: relative;
   overflow: hidden;
