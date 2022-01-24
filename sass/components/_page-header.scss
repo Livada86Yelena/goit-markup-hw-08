@@ -276,6 +276,9 @@
   &:focus {
     color: var(--accent-color);
   }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .active {
@@ -323,10 +326,9 @@
   }
 
   &::after {
-    @media screen and (max-width: 480px) {
+    @media screen and (min-width: 480px) {
       display: none;
     }
-    position: relative;
     content: '';
     display: block;
     width: 100%;
@@ -335,6 +337,10 @@
     background-color: var(--accent-color);
     border-radius: 4px;
     top: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
   }
 }
 .site-nav-list__link-contacts {
