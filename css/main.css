@@ -1152,6 +1152,16 @@ br {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .socials {
+    flex-wrap: inherit;
+    justify-content: inherit;
+    text-align: inherit;
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 /* display: flex; 
   align-items: baseline;
  */
@@ -1240,6 +1250,13 @@ br {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .sociality__title {
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+}
+
 .sociality__network {
   /*
   margin-left: 127px; */
@@ -1261,6 +1278,12 @@ br {
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sociality {
+    margin-left: 70px;
   }
 }
 
@@ -1311,10 +1334,13 @@ br {
   }
 }
 
-/* .form {
-  display: flex;
-   margin-left: 93px; 
-} */
+@media screen and (min-width: 1200px) {
+  .form {
+    margin-left: 93px;
+    margin-top: 0;
+  }
+}
+
 .form-title {
   font-family: Roboto;
   font-style: normal;
@@ -1327,12 +1353,11 @@ br {
 }
 
 .fields__width {
-  width: 100%;
   margin-bottom: 20px;
 }
 
 .fields__letter {
-  /* width: 450px; */
+  width: 450px;
   height: 50px;
   left: 815px;
   top: 2787px;
@@ -1347,6 +1372,19 @@ br {
 .fields__letter {
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .fields__letter {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fields__letter {
+    width: 358px;
+    margin-left: 0;
+  }
 }
 
 .fields__button {
@@ -1364,6 +1402,12 @@ br {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .fields__button {
+    margin: 0;
+  }
 }
 
 .fields__button--title {
@@ -1385,11 +1429,14 @@ br {
   padding: 0;
 }
 
-/* .fields  {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .fields {
+    display: flex;
+    align-items: baseline;
+  }
+}
 
-  align-items: baseline;
-} */
+/* */
 .portfolio-projects__image {
   position: relative;
   overflow: hidden;
