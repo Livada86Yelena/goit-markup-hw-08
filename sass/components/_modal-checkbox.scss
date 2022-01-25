@@ -35,6 +35,7 @@
 .form-policy__checkbox-form:checked + .form-policy__icon {
   background-color: var(--accent-color);
   background-image: url('../images/SVG/icon-check-2.svg');
+
   background-size: contain;
   background-origin: border-box;
   border-color: transparent;
