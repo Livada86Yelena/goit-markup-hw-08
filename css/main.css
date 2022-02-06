@@ -550,13 +550,43 @@ ul {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
       url(../images/Imghero.jpg);
       */
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/headerimg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(..//../images/task8team/heromobile1x.jpg);
   max-width: 1600px;
   height: 600px;
   background-size: cover;
   align-items: center;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-overlay {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../images/task8team/heromobile2x.jpg);
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .hero-overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(..//..//images/task8team/herotablet1x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-overlay {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../..//images/task8team/herotablet2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(..//..//images/task8team/herodeskstop1x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-overlay {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../..//images/task8team/herodeskstop2x.jpg);
+  }
 }
 
 .hero-overlay br {
@@ -573,15 +603,20 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  /* font-family: Roboto;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin: 0; */
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-overlay__tittle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
 
 .hero-overlay__button-studio {
