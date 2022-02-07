@@ -71,6 +71,7 @@
 */
 
 .site-nav-list__item {
+  position: relative;
   margin-left: 40px;
   margin-bottom: 32px;
 
@@ -90,6 +91,8 @@
 
 /* Мобильное меню */
 .header-page {
+  position: relative;
+
   align-items: center;
   height: 88px;
   padding-top: 32px;
@@ -132,20 +135,18 @@
 .menu-button.is-open .icon-strip {
   display: none;
 }
-.icon-cross {
-  position: absolute;
-}
+
 .navigational-menu {
   display: none;
-  position: relative;
 
+  display: none;
   width: 450px;
   height: 796px;
   position: fixed;
-  top: 0;
+  top: 10;
   left: 0;
   width: 100%;
-  z-index: 20;
+  z-index: 1;
   background-color: white;
 
   &.is-open {
@@ -223,7 +224,7 @@
   margin-right: 10px;
   fill: currentColor;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 }
@@ -231,7 +232,7 @@
   margin-right: 10px;
   margin-left: 0px;
   fill: currentColor;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 }
