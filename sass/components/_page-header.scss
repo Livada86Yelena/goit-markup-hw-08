@@ -71,7 +71,6 @@
 */
 
 .site-nav-list__item {
-  position: relative;
   margin-left: 40px;
   margin-bottom: 32px;
 
@@ -80,6 +79,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-right: 93px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -90,10 +90,8 @@
 
 /* Мобильное меню */
 .header-page {
-  position: relative;
-
   align-items: center;
-  height: 80px;
+  height: 88px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -134,18 +132,20 @@
 .menu-button.is-open .icon-strip {
   display: none;
 }
-
+.icon-cross {
+  position: absolute;
+}
 .navigational-menu {
   display: none;
+  position: relative;
 
-  display: none;
   width: 450px;
   height: 796px;
   position: fixed;
-  top: 10;
+  top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 20;
   background-color: white;
 
   &.is-open {
@@ -212,6 +212,7 @@
     margin-left: 30px;
   }
 }
+
 .contacts-list /* {
   display: flex;
   margin: auto;
@@ -259,16 +260,16 @@
 
   &::after {
     @media screen and (min-width: 480px) {
-      display: none;
+      position: relative;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 4px;
+      bottom: auto;
+      background-color: var(--accent-color);
+      border-radius: 4px;
+      top: 30px;
     }
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-    bottom: auto;
-    background-color: var(--accent-color);
-    border-radius: 4px;
-    top: 30px;
   }
 
   @media screen and (min-width: 768px) {
@@ -293,6 +294,7 @@
   &:focus {
     color: var(--accent-color);
   }
+
   @media screen and (min-width: 768px) {
     font-size: 14px;
   }
@@ -319,6 +321,21 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  &::after {
+    position: relative;
+    content: '';
+    display: none;
+    width: 100%;
+    height: 4px;
+    bottom: auto;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    top: 30px;
+  }
+  .active {
+    position: absolute;
+  }
   @media screen and (min-width: 768px) {
     font-size: 14px;
   }
@@ -344,16 +361,16 @@
 
   &::after {
     @media screen and (min-width: 480px) {
-      display: none;
+      position: relative;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 4px;
+      bottom: auto;
+      background-color: var(--accent-color);
+      border-radius: 4px;
+      top: 30px;
     }
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-    bottom: auto;
-    background-color: var(--accent-color);
-    border-radius: 4px;
-    top: 30px;
   }
 
   @media screen and (min-width: 768px) {
@@ -444,6 +461,7 @@
   }
   @media screen and (min-width: 768px) {
     font-size: 14px;
+    margin-right: 20px;
   }
 }
 
