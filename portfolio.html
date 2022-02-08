@@ -19,19 +19,21 @@
                 <a class="header-page__logo" href=""><span class="header-page__logo-web">Web</span><span class="header-page__logo-studio">Studio</span></a>
                 <!-------  Мобильное меню ----------->
                 
-                <button type="button" class="menu-button" data-menu-button>
-                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="40" height="40">
                 
                         <use class="icon-strip" href="./images/symbol-defs (2).svg#icon-menu_40px"></use>
-                
-                        <use class="icon-cross" href="./images/symbol-defs (2).svg#icon-close_40px"></use>
                 
                 
                     </svg>
                 </button>
 
-                <div class="navigational-menu" data-menu>
-                
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button class="menu-toggle js-close-menu">
+                        <svg width="40" height="40">
+                            <use class="icon-cross" href="./images/symbol-defs (2).svg#icon-close_40px"></use>
+                        </svg>
+                    </button>
                 <ul class="site-nav-list">
                     <li class="site-nav-list__item"><a class="site-nav-list__link" href="./index.html" class="active">Студия</a></li>
                     <li class="site-nav-list__item"><a class="site-nav-list__link-portffolio" href="./portfolio.html" class="active">Портфолио</a></li>
@@ -365,7 +367,10 @@
     </div>
 </footer>
 
-<script src="./js/menu.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script src="./js/mobile-menu.js"></script>
             
 </body>
 </html>

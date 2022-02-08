@@ -42,7 +42,9 @@
 .site-nav-list {
   text-decoration: none;
   margin-bottom: 302px;
-
+  @media screen and (max-width: 767px) {
+    margin-top: 48px;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
 
@@ -101,8 +103,8 @@
 .menu-toggle {
   position: absolute;
   display: inline-flex;
-  top: 25px;
-  right: 0px;
+  top: 21px;
+  right: 25px;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -110,36 +112,22 @@
   border: none;
   background-color: transparent;
   fill: #212121;
+}
 
-  &:focus {
-    fill: var(--accent-color);
-  }
-
-  @media screen and (min-width: 768px) {
+@media (min-width: 768px) {
+  .menu-toggle {
     display: none;
   }
 }
 
+.menu-toggle:hover,
 .menu-toggle:focus {
-  fill: var(--accent-color);
-}
-
-.icon-cross {
-  display: none;
-}
-
-.menu-container.is-open .icon-cross {
-  display: block;
-}
-
-.menu-toggle.is-open .icon-strip {
-  display: none;
+  color: var(--accent-color);
 }
 
 .menu-container {
   display: none;
 
-  display: none;
   width: 450px;
   height: 796px;
   position: fixed;
@@ -148,8 +136,13 @@
   width: 100%;
   z-index: 999;
   background-color: #ffffff;
-
+  width: 100vw;
+  height: 100vh;
   transition: transform 250ms ease-in-out;
+
+  @media screen and(max-width:767px) {
+    top: 0;
+  }
 
   &.is-open {
     display: block;
