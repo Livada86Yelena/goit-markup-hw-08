@@ -150,11 +150,11 @@ ul {
   fill: var(--accent-color);
 }
 
-.menu-toggle .icon-cross {
+.icon-cross {
   display: none;
 }
 
-.menu-toggle.is-open .icon-cross {
+.menu-container.is-open .icon-cross {
   display: block;
 }
 
@@ -171,9 +171,9 @@ ul {
   top: 10;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 999;
   background-color: #ffffff;
-  transition: left 500ms, visibility 500ms;
+  transition: transform 250ms ease-in-out;
 }
 
 .menu-container.is-open {
