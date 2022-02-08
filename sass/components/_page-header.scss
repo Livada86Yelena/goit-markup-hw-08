@@ -98,7 +98,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.menu-button {
+.menu-toggle {
   position: absolute;
   display: inline-flex;
   top: 25px;
@@ -120,23 +120,23 @@
   }
 }
 
-.menu-button:focus {
+.menu-toggle:focus {
   fill: var(--accent-color);
 }
 
-.menu-button .icon-cross {
+.menu-toggle .icon-cross {
   display: none;
 }
 
-.menu-button.is-open .icon-cross {
+.menu-toggle.is-open .icon-cross {
   display: block;
 }
 
-.menu-button.is-open .icon-strip {
+.menu-toggle.is-open .icon-strip {
   display: none;
 }
 
-.navigational-menu {
+.menu-container {
   display: none;
 
   display: none;

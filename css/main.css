@@ -122,7 +122,7 @@ ul {
   padding-bottom: 32px;
 }
 
-.menu-button {
+.menu-toggle {
   position: absolute;
   display: inline-flex;
   top: 25px;
@@ -136,33 +136,33 @@ ul {
   fill: #212121;
 }
 
-.menu-button:focus {
+.menu-toggle:focus {
   fill: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .menu-toggle {
     display: none;
   }
 }
 
-.menu-button:focus {
+.menu-toggle:focus {
   fill: var(--accent-color);
 }
 
-.menu-button .icon-cross {
+.menu-toggle .icon-cross {
   display: none;
 }
 
-.menu-button.is-open .icon-cross {
+.menu-toggle.is-open .icon-cross {
   display: block;
 }
 
-.menu-button.is-open .icon-strip {
+.menu-toggle.is-open .icon-strip {
   display: none;
 }
 
-.navigational-menu {
+.menu-container {
   display: none;
   display: none;
   width: 450px;
@@ -176,12 +176,12 @@ ul {
   transition: left 500ms, visibility 500ms;
 }
 
-.navigational-menu.is-open {
+.menu-container.is-open {
   display: block;
 }
 
 @media screen and (min-width: 768px) {
-  .navigational-menu {
+  .menu-container {
     display: block;
     height: 796px;
     position: absolute;
@@ -1591,6 +1591,12 @@ br {
   border-bottom: 1px solid #eeee;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-projects__border {
+    flex-grow: 1;
+  }
+}
+
 .portfolio-projects__tittle {
   font-family: Roboto;
   font-weight: bold;
@@ -1632,6 +1638,14 @@ br {
 
 .portfolio-projects__product:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-projects__product {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 .portfolio-projects {
