@@ -15,30 +15,8 @@
     align-items: baseline;
   }
 }
-/* display: flex; 
-  align-items: baseline;
- */
-.coordinates__logo {
-  font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-.coordinates__logo .footerstudio {
-  transition-property: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.coordinates__logo .footerstudio:hover,
-.coordinates__logo .footerstudio:focus {
-  color: var(--accent-color);
-}
-
-.contacts {
+.footer {
   background-color: #2f303a;
   padding-bottom: 60px;
   padding-top: 60px;
@@ -49,12 +27,6 @@
   @media screen and (min-width: 1200px) {
     padding-top: 60px;
   }
-}
-.coordinates__logo-web {
-  color: var(--accent-color);
-}
-.coordinates__logo-studio {
-  color: #ffffff;
 }
 
 .coordinates__address,
@@ -67,7 +39,6 @@
   color: #ffffff;
   text-decoration: none;
 }
-/* Для 468 */
 
 .coordinates__address {
   margin-top: 20px;
@@ -109,15 +80,7 @@
     margin-bottom: 14px;
   }
 }
-.sociality__network {
-  /*
-  margin-left: 127px; */
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 60px;
-}
 .sociality {
   box-sizing: border-box;
 
@@ -134,68 +97,32 @@
   }
 }
 
-/* .sociality 
-
-   {
-  margin-left: 70px;
-} */
-.sociality__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-
-  fill: #ffffff;
-  background-color: rgba(255, 255, 255, 0.1);
-
-  transition-property: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    fill: #ffffff;
-    background-color: var(--accent-color);
-  }
-}
-.sociality__link {
-  display: flex;
-}
-
 .form {
   box-sizing: border-box;
 
   @media screen and (min-width: 768px) {
     margin: auto;
     display: flex;
-    -webkit-box-pack: center;
     justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+
     flex-direction: column;
-    -webkit-box-align: center;
     align-items: center;
   }
 
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
-    margin-top: 0;
+    margin-top: 14px;
   }
 }
 
 //*Form-footer
 
 .form-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
+  margin-bottom: 14px;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primery-white-color);
 }
 .fields__width {
   margin-bottom: 20px;

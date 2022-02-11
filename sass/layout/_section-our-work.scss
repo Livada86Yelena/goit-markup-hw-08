@@ -1,0 +1,53 @@
+.our-work {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-bottom: 94px;
+  }
+  .our-work__tittle {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .our-work__list-images > .our-work__item {
+    position: relative;
+  }
+  .our-work__list-images > .our-work__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .our-work__list-images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .our-work__text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    bottom: 3px;
+  }
+
+  .our-work__text-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+}

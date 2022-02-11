@@ -1,8 +1,17 @@
-.portfolio-projects__image {
+.portfolio {
+  @media screen and (min-width: 768px) {
+    --card-item: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --card-item: 3;
+  }
+}
+
+.portfolio__image {
   position: relative;
   overflow: hidden;
 }
-.portfolio-projects__text {
+.portfolio__text {
   position: absolute;
   top: 0;
   right: 0;
@@ -26,38 +35,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-projects__product:hover .portfolio-projects__text {
+.portfolio__link:hover .portfolio__text {
   transform: translateY(0);
   opacity: 1;
 }
 
-.propositions {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.portfolio-projects__card {
-  margin-right: 30px;
-  margin-bottom: 30px;
-
-  @media screen and (min-width: 768px) {
-    width: calc((100% - 2 * 30px) / 2);
-    text-align: start;
-    margin: 15px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: calc((100% - 3 * 30px) / 3);
-  }
-}
-
-.portfolio-projects__card:nth-clild(3n) {
-  margin-right: 0;
-
-  &:nth-clild(-n + 3) {
-    margin-bottom: 0;
-  }
-}
-.portfolio-projects__border {
+.portfolio__border {
   padding: 20px 24px;
 
   border-right: 1px solid#eeee;
@@ -69,7 +52,7 @@
   }
 }
 
-.portfolio-projects__tittle {
+.portfolio__tittle {
   font-family: Roboto;
   font-weight: bold;
   font-size: 18px;
@@ -77,13 +60,9 @@
   letter-spacing: 0.06em;
   color: #212121;
   margin: 0;
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
 }
 
-.portfolio-projects__border--text {
+.portfolio__border--text {
   font-family: Roboto;
   font-style: normal;
   font-size: 16px;
@@ -91,13 +70,8 @@
   letter-spacing: 0.03em;
   color: #757575;
   margin: 0;
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
 }
-.portfolio-projects__product {
+.portfolio__link {
   display: block;
   text-decoration: none;
   & {
@@ -113,24 +87,5 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-  }
-}
-.portfolio-projects {
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  margin-right: -30px;
-  margin-bottom: -30px;
-
-  @media screen and (min-width: 768px) {
-    margin: -15px;
-    padding: 0;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    margin-right: -30px;
-    margin-bottom: -30px;
   }
 }

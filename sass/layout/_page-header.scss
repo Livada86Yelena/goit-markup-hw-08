@@ -1,78 +1,53 @@
-.header-page__logo {
-  display: inline;
-  margin-top: 50px;
-  padding: auto;
-  font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-
-  @media screen and (min-width: 768px) {
-    font-family: Raleway, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-    text-decoration: none;
+.header {
+  border-bottom: 1px solid var(--secondary-page-h-color);
+  .logo {
+    margin-right: 93px;
   }
 }
-
-.header-page__logo .header-page__logo-studio {
-  transition-property: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.header__container {
+  display: flex;
+  align-items: center;
 }
-.header-page__logo .header-page__logo-studio:hover,
-:focus {
-  color: var(--accent-color);
+.header__nav {
+  display: flex;
+  align-items: center;
 }
-
-.header-page__logo-web {
-  color: #2196f3;
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  color: var(--title-text-color);
 }
-
-.header-page__logo-studio {
-  color: #212121;
+.header__nav-item:not(:last-child) {
+  margin-right: 50px;
 }
+.header__contacts__item:not(:last-child) {
+  margin-right: 30px;
+}
+.header__contacts-list {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.header__link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 
-.site-nav-list {
-  text-decoration: none;
-  margin-bottom: 302px;
-  @media screen and (max-width: 767px) {
-    margin-top: 48px;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin: -23px 0 0 40px;
-    padding: 0;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    margin-left: -93px;
+  &:hover,
+  &:focus,
+  &.curent {
+    color: var(--accent-color);
   }
 }
-
-/* .site-nav-list__item {
-  margin-left: 50px;
-} 
-*/
-
-.site-nav-list__item {
+.header__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+/*.site-nav-list__item {
   position: relative;
   margin-left: 40px;
   margin-bottom: 32px;
@@ -89,17 +64,10 @@
   .site-nav-list .site-nav-list__item:not(:last-child) {
     margin-right: 50px;
   }
-}
+} */
 
 /* Мобильное меню */
-.header-page {
-  position: relative;
-
-  align-items: center;
-  height: 88px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+/*
 .menu-toggle {
   position: absolute;
   display: inline-flex;
@@ -161,19 +129,8 @@
   }
 }
 
-/*{
-  display: flex;
-  align-items: center;
 
-  height: 80px;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
-} */
-
-.header-border {
-  border-bottom: 1px solid#ececec;
-}
 .contacts-list {
   margin-left: 40px;
 
@@ -214,7 +171,7 @@
   margin: auto;
   margin-right: 0;
 } */
-
+/*
 .contacts-list__svg-mail {
   margin-right: 10px;
   fill: currentColor;
@@ -235,11 +192,10 @@
   margin-left: 30px;
 } */
 
-.site-nav-list__link-index {
+/* .site-nav-list__link-index {
   font-family: Roboto;
   font-weight: 500;
-  /* font-size: 14px; */
-  font-size: 40px;
+ font-size: 40px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -275,7 +231,7 @@
 .site-nav-list__link {
   font-family: Roboto;
   font-weight: 500;
-  /* font-size: 14px; */
+ 
   font-size: 40px;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -303,7 +259,7 @@
 .site-nav-list__link-portfolio {
   font-family: Roboto;
   font-weight: 500;
-  /* font-size: 14px; */
+  
   font-size: 40px;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -339,7 +295,7 @@
 .site-nav-list__link-portffolio {
   font-family: Roboto;
   font-weight: 500;
-  /* font-size: 14px; */
+  
   font-size: 40px;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -376,7 +332,7 @@
 .site-nav-list__link-contacts {
   font-family: Roboto;
   font-weight: 500;
-  /* font-size: 14px; */
+  
   font-size: 40px;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -408,7 +364,7 @@
 .contacts-list__e-mail-main {
   font-family: Roboto;
   font-weight: 500;
-  /* font-size: 14px; */
+ 
   font-size: 34px;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -433,7 +389,7 @@
   font-family: Roboto;
 
   font-weight: 500;
-  /* font-size: 14px; */
+  
   font-size: 34px;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -492,3 +448,4 @@
   color: #2196f3;
   text-decoration: none;
 }
+*/
