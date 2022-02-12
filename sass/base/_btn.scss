@@ -2,4 +2,16 @@ btn:hover,
 :focus {
   background-color: var(--accent-color);
   color: var(--accent-color);
+
+  & {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.9;
+    display: block;
+    cursor: pointer;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    border: none;
+  }
 }
