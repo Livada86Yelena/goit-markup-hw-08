@@ -1,8 +1,12 @@
 .form-policy {
-  display: flex;
-  align-items: center;
+  @media (max-width: 1199px) {
+    display: block;
+    align-items: center;
+  }
+  @media (min-width: 1199px) {
+    margin-left: 10px;
+  }
 }
-
 .form-policy__checkbox-form {
   display: flex;
   position: absolute;
@@ -26,7 +30,7 @@
   border: 2px solid #212121;
   border-radius: 4px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     margin-right: 0;
   }
 }
@@ -42,20 +46,6 @@
   background-repeat: no-repeat;
 }
 
-.form-policy__contract {
-  font-family: Roboto;
-
-  font-size: 14px;
-  line-height: 24px;
-
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-  margin-left: 3px;
-
-  @media screen and (max-width: 768px) {
-    font-size: 12px;
-  }
-}
 .form-policy {
   margin-bottom: 30px;
 

@@ -60,7 +60,7 @@
 
   width: 100%;
   resize: none;
-  line-height: 16px;
+
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
@@ -71,6 +71,11 @@
   transform: border rgba(33, 33, 33, 0.2);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  & ::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    line-height: 1.14px;
+  }
 }
 
 .form-modal__icon {
@@ -91,10 +96,12 @@
     color: var(--accent-color);
   }
 
-  @media screen and (min-width: 768px) {
-    font-size: 12px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71px;
   }
 }
+
 .form-modal__commenting-field:hover,
 .form-modal__commenting-field:focus {
   border-color: var(--accent-color);
