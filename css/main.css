@@ -57,7 +57,7 @@ img {
 btn:hover,
 :focus {
   background-color: var(--accent-color);
-  color: var(--accent-color);
+  color: var(--primery-white-color);
 }
 
 btn:hover,
@@ -1543,6 +1543,7 @@ btn:hover,
   height: 50px;
   padding: 0;
   letter-spacing: 0.06em;
+  color: var(--primery-white-color);
   background: #2196f3;
   border-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1552,18 +1553,14 @@ btn:hover,
 }
 
 .modal-send__text {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  padding: 10px 55px;
   color: var(--primery-white-color);
+  font-size: 16px;
+  line-height: 1.16px;
 }
 
 .form-policy {
   display: flex;
   align-items: center;
-  margin-left: 10px;
 }
 
 .form-policy__checkbox-form {
@@ -1631,31 +1628,8 @@ btn:hover,
   }
 }
 
-.modal-send__button {
-  display: block;
-  align-items: center;
-  margin: auto;
-  font-size: 16px;
-  width: 200px;
-  height: 50px;
-  padding: 0;
-  letter-spacing: 0.06em;
-  background: #2196f3;
-  border-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.modal-send__text {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.06em;
-  color: var(--primery-white-color);
-}
-
 .modal-tittle {
+  display: block;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -1663,12 +1637,7 @@ btn:hover,
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-}
-
-@media screen and (min-width: 768px) {
-  .modal-tittle {
-    display: block;
-  }
+  display: block;
 }
 
 .form-modal {
@@ -1744,7 +1713,12 @@ btn:hover,
 }
 
 .form-policy__text {
+  font-size: 12px;
   line-height: 1.14px;
+}
+
+.form-policy__text .form-policy__treaty {
+  color: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {

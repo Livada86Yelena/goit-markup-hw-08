@@ -1,7 +1,6 @@
 .form-policy {
   display: flex;
   align-items: center;
-  margin-left: 10px;
 }
 
 .form-policy__checkbox-form {
@@ -64,27 +63,4 @@
     display: block;
     margin-left: 0;
   }
-}
-.modal-send__button {
-  display: block;
-  align-items: center;
-  margin: auto;
-  font-size: 16px;
-  width: 200px;
-  height: 50px;
-  padding: 0;
-  letter-spacing: 0.06em;
-  background: #2196f3;
-  border-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.modal-send__text {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.06em;
-
-  color: var(--primery-white-color);
 }
