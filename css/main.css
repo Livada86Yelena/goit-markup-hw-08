@@ -304,6 +304,15 @@ img {
   color: var(--accent-color);
 }
 
+.icon-cross {
+  fill: black;
+}
+
+.menu-toggle .icon-cross:hover,
+.menu-toggle .icon-cross:focus {
+  fill: var(--accent-color);
+}
+
 .mob-container {
   display: flex;
   flex-direction: column;
