@@ -279,8 +279,12 @@ img {
   }
 }
 
-.icon-strip:hover,
-.icon-strip:focus {
+.icon-strip {
+  fill: var(--title-text-color);
+}
+
+.menu-toggle .icon-strip:hover,
+.menu-toggle .icon-strip:focus {
   fill: var(--accent-color);
 }
 
@@ -533,15 +537,14 @@ img {
 }
 
 .team__wrapper {
-  padding: 30px;
-  padding-bottom: 24px;
+  padding: 25px;
   text-align: center;
 }
 
 .team__name,
 .team__proffession {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
 }
 
 .team__name {
@@ -998,6 +1001,13 @@ img {
 @media screen and (max-width: 767px) and (min-width: 1200px) {
   .footer__item {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-second__item {
+    margin-top: 72px;
+    margin-left: 93px;
   }
 }
 

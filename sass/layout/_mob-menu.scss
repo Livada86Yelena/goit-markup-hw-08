@@ -11,8 +11,12 @@
     display: none;
   }
 }
-.icon-strip:hover,
-.icon-strip:focus {
+
+.icon-strip {
+  fill: var(--title-text-color);
+}
+.menu-toggle .icon-strip:hover,
+.menu-toggle .icon-strip:focus {
   fill: var(--accent-color);
 }
 .menu-toggle-close {
