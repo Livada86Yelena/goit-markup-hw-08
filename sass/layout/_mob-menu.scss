@@ -104,6 +104,13 @@
   line-height: 22px;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+
+  @media screen and (max-width: 480px) {
+    --card-item: 2;
+  }
+  @media screen and (min-width: 480px) {
+    --card-item: 0;
+  }
 }
 .mob-network__item:not(:last-child) {
   margin-right: 20px;
