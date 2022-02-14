@@ -271,17 +271,17 @@ img {
   margin-left: auto;
   border: none;
   background-color: transparent;
-  fill: #212121;
-}
-
-.menu-toggle:hover, .menu-toggle:focus {
-  color: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
+}
+
+.icon-strip:hover,
+.icon-strip:focus {
+  fill: var(--accent-color);
 }
 
 .menu-toggle-close {
@@ -354,6 +354,10 @@ img {
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
+}
+
+.mob__link:hover, .mob__link:focus, .mob__link.curent {
+  color: var(--accent-color);
 }
 
 .mob__contacts-list {
