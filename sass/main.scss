@@ -1,12 +1,13 @@
 @import './utils/variables';
 @import './base/common';
 @import './base/reset';
-@import './base/btn';
 @import './components/main-container';
 @import './components/logo';
 @import './components/card-set';
 @import './components/section';
+@import './components/btn';
 @import './layout/page-header';
+@import './layout/mob-menu';
 @import './layout/hero-element';
 @import './layout/section-tech';
 @import './layout/section-team';
@@ -17,6 +18,3 @@
 @import './layout/card-set-portfolio';
 @import './layout/footer';
 @import './layout/modal-window';
-@import './layout/modal-buttons';
-@import './layout/modal-checkbox';
-@import './layout/modal-table';

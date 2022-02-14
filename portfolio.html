@@ -17,21 +17,6 @@
             <nav class="header__nav">
                 <a class="logo link" href="">Web<span class="logo--black">Studio</span></a>
                                 
-                <!--<button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <svg width="40" height="40">
-                
-                        <use class="icon-strip" href="./images/mobile-menu.svg#icon-menu_40px"></use>
-                
-                
-                    </svg>
-                </button>
-
-                <div class="menu-container js-menu-container" id="mobile-menu">
-                    <button class="menu-toggle js-close-menu">
-                        <svg width="40" height="40">
-                            <use class="icon-cross" href="./images/mobile-menu.svg#icon-close_40px"></use>
-                        </svg>
-                    </button>-->
 
                 <ul class="header__nav-list list">
                     <li class="header__nav-item"><a class="header__link link" href="./index.html">Студия</a></li>
@@ -52,16 +37,51 @@
                             </svg>info@devstudio.com</a>
                     </li>
                 
+                </ul>
+                <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="40" height="40">
+                        <use class="icon-strip" href="./images/mobile-menu.svg#icon-menu_40px"></use>
+                    </svg>
+                </button>
                 
-                </ul>
-                <!--<ul class="m-mobile-network">
-                    <li class="mobile-network"><a class="item" href="">Instagram</a></li>
-                    <li class="mobile-network"><a class="item" href="">Twitter</a></li>
-                    <li class="mobile-network"><a class="item" href="">Facebook</a></li>
-                    <li class="mobile-network"><a class="item" href="">LinkedIn</a></li>
-                </ul>
-                </div>-->
-          
+                
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <div class="mob-container">
+                        <div class="mob-top">
+                            <button class="menu-toggle-close js-close-menu">
+                                <svg width="40" height="40">
+                                    <use class="icon-cross" href="./images/mobile-menu.svg#icon-close_40px"></use>
+                                </svg>
+                            </button>
+                            <ul class="mob__nav-list list">
+                                <li class="mob__nav-item"><a class="mob__nav__link link curent" href="./index.html">Студия</a></li>
+                                <li class="mob__nav-item"><a class="mob__nav__link link" href="./portfolio.html">Портфолио</a></li>
+                                <li class="mob__nav-item"><a class="mob__nav__link link" href="">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="mob-bottom">
+                
+                            <ul class="mob__contacts-list list">
+                                <li class="mob__contacts__item"><a class="mob-tel__link link" href="">+38 096 111 11 11</a></li>
+                
+                                <li class="mob__contacts__item"><a class="mob__link link" href="">
+                                        info@devstudio.com</a>
+                                </li>
+                
+                            </ul>
+                            <ul class="mob-network list">
+                                <li class="mob-network__item"><a class="mob-network__link link" href="">Instagram</a><span
+                                        class="network__I"></span></li>
+                                <li class="mob-network__item"><a class="mob-network__link link" href="">Twitter</a><span
+                                        class="network__I"></span></li>
+                                <li class="mob-network__item"><a class="mob-network__link link" href="">Facebook</a><span
+                                        class="network__I"></span></li>
+                                <li class="mob-network__item"><a class="mob-network__link link" href="">LinkedIn</a></li>
+                            </ul>
+                
+                        </div>
+                    </div>
+                </div>
         </div>
     
     </header>
@@ -91,9 +111,10 @@
                                                media="(min-width:1200px)">
                                               <source srcset="./images/portfolio-img/portfolio-tab-1-1x.jpg 1x, ./images/portfolio-img/portfolio-tab-1-2x.jpg 2x"
                                                media="(min-width:768px)">
-                                              <source srcset="./images/portfolio-img/portfolio-mob-1-1x.jpg 1x, ./images/portfolio-img/portfolio-mob-1-2x.jpg 2x" 
-                                              media="(min-width:480px)">
-                                        <img src="./images/portfolio-img/portfolio-deskstop-1-1x" alt="Фото">
+                                              <source srcset="./images/portfolio-img/portfolio-mob-1-1x.jpg 1x, ./images/portfolio-img/portfolio-mob-1-1x.jpg 2x" 
+                                              media="(min-width:480px)"
+                    >
+                                        <img src="./images/portfolio-img/portfolio-deskstop-1-2x.jpg" alt="Фото">
                                         </picture>
                                     <p class="portfolio__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -162,7 +183,7 @@
                                                     media="(min-width:768px)">
                                                 <source srcset="./images/portfolio-img/portfolio-mob-4-1x.jpg 1x, ./images/portfolio-img/portfolio-mob-4-2x.jpg 2x"
                                                     media="(min-width:480px)">
-                                        <img src="./images/portfolio-img/portfolio-deskstop-4-1x.jpg 1x" alt="Фото">
+                                        <img src="./images/portfolio-img/portfolio-deskstop-4-1x.jpg" alt="Фото">
                                         </picture>
                                         <p class="portfolio__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                             платформу для цифрового
@@ -185,7 +206,7 @@
                                                 media="(min-width:768px)">
                                             <source srcset="./images/portfolio-img/portfolio-mob-5-1x.jpg 1x, ./images/portfolio-img/portfolio-mob-5-2x.jpg 2x"
                                                 media="(min-width:480px)">
-                                        <img src="./images/portfolio-img/portfolio-deskstop-5-1x.jpg 1x" alt="Фото">
+                                        <img src="./images/portfolio-img/portfolio-deskstop-5-2x.jpg" alt="Фото">
                                         </picture>
                                         <p class="portfolio__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                             платформу для цифрового
@@ -277,7 +298,7 @@
                                                 media="(min-width:768px)">
                                             <source srcset="./images/portfolio-img/portfolio-mob-9-1x.jpg 1x, ./images/portfolio-img/portfolio-mob-9-2x.jpg 2x"
                                                 media="(min-width:480px)">
-                                    <img src="./images/portfolio-img/portfolio-deskstop-9-1x.jpg 1x" alt="Фото">
+                                    <img src="./images/portfolio-img/portfolio-deskstop-9-1x.jpg" alt="Фото">
                                     </picture>
                                     <p class="portfolio__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                         платформу для цифрового
@@ -293,7 +314,6 @@
                 </div>
         </section>
     </main>
-
 <footer class="footer">
     <div class="container footer-container">
         <div class="footer-wraper">
@@ -348,14 +368,16 @@
             <p class="sociality__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
             <form>
                 <div class="footer-item">
+                    <div class="footer__placeholder">
 
-                    <input type="E-mail" name="E-mail" placeholder="E-mail" id="E-mail" class="fields__letter">
-                    <button btn type="submit" class="fields__button"><span
-                            class="fields__button--title">Подписаться</span>
-                        <svg class="fields__button--svg" width="24" height="24">
-                            <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-                        </svg>
-                    </button>
+                        <input type="E-mail" name="E-mail" placeholder="E-mail" id="E-mail" class="fields__letter">
+                        <button btn type="submit" class="fields__button"><span
+                                class="fields__button--title">Подписаться</span>
+                            <svg class="fields__button--svg" width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </form>
         </div>
