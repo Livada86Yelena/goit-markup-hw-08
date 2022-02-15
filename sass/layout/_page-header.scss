@@ -86,3 +86,7 @@
   margin-right: 10px;
   fill: currentColor;
 }
+.mob__nav-item:hover,
+.mob__nav-item:focus {
+  color: var(--accent-color);
+}

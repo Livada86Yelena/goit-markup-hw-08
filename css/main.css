@@ -264,6 +264,11 @@ img {
   fill: currentColor;
 }
 
+.mob__nav-item:hover,
+.mob__nav-item:focus {
+  color: var(--accent-color);
+}
+
 .menu-toggle {
   top: 10px;
   right: 10px;
