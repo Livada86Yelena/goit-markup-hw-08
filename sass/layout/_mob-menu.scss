@@ -28,19 +28,14 @@
   margin-left: auto;
   border: none;
   background-color: transparent;
-  fill: #212121;
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
 }
+
 .icon-cross {
-  fill: black;
+  fill: var(--title-text-color);
 }
 
-.menu-toggle .icon-cross:hover,
-.menu-toggle .icon-cross:focus {
+.menu-toggle-close .icon-cross:hover,
+.menu-toggle-close .icon-cross:focus {
   fill: var(--accent-color);
 }
 .mob-container {
@@ -105,7 +100,6 @@
 }
 .mob-network {
   display: flex;
-  margin-top: 64px;
   margin-left: -10px;
   font-weight: 500;
   font-size: 18px;
@@ -124,7 +118,7 @@
   margin-right: 20px;
 }
 .mob-network__item {
-  margin-left: -10px;
+  margin-bottom: -10px;
 }
 .mob-bottom {
   margin-top: auto;
