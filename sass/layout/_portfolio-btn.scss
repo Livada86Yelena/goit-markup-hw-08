@@ -83,6 +83,8 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
+  margin-top: -15px;
+  margin-left: -8px;
 
   @media screen and (min-width: 768px) {
     justify-content: center;
@@ -93,10 +95,8 @@
   }
 }
 .button-block__item {
-  margin-bottom: 15px;
-}
-.button-block .button-block__item:not(:last-child) {
-  margin-right: 8px;
+  margin-top: 15px;
+  margin-left: 8px;
 }
 
 .hero-overlay__button-studio {

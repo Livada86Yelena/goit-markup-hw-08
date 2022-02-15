@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10px;
+
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -22,4 +22,12 @@
 
 .footer .social__link {
   fill: var(--primery-white-color);
+}
+.social {
+  display: flex;
+
+  justify-content: center;
+}
+.social__list:not(:last-child) {
+  margin-right: 10px;
 }

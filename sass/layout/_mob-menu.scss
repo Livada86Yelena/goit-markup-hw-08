@@ -11,7 +11,6 @@
     display: none;
   }
 }
-
 .icon-strip {
   fill: var(--title-text-color);
 }
@@ -24,18 +23,13 @@
   top: 10px;
   right: 15px;
   display: block;
-  margin-right: 21px;
-  margin-left: auto;
+  fill: var(--title-text-color);
   border: none;
   background-color: transparent;
 }
 
-.icon-cross {
-  fill: var(--title-text-color);
-}
-
-.menu-toggle-close .icon-cross:hover,
-.menu-toggle-close .icon-cross:focus {
+.menu-toggle-close:hover,
+.menu-toggle-close:focus {
   fill: var(--accent-color);
 }
 .mob-container {
@@ -73,7 +67,7 @@
 }
 .mob-tel__link {
   display: block;
-  margin-bottom: 34px;
+
   font-family: Roboto;
   font-weight: 500;
   font-size: 34px;
@@ -101,24 +95,18 @@
 .mob-network {
   display: flex;
   margin-left: -10px;
+  margin-top: -10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  flex-wrap: wrap;
+}
 
-  @media screen and (max-width: 480px) {
-    --card-item: 2;
-  }
-  @media screen and (min-width: 480px) {
-    --card-item: 0;
-  }
-}
-.mob-network__item:not(:last-child) {
-  margin-right: 20px;
-}
 .mob-network__item {
-  margin-bottom: -10px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 .mob-bottom {
   margin-top: auto;
@@ -130,4 +118,7 @@
   top: 726px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   margin-left: 10px;
+}
+.mob__contacts__item:not(:last-child) {
+  margin-bottom: 32px;
 }

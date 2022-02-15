@@ -59,13 +59,14 @@
   display: flex;
   flex-direction: column;
 }
-.form-modal__label {
+.form-modal__wrapper {
   margin-bottom: 20px;
 }
+
 .form-modal__label {
   position: relative;
   display: block;
-  margin-bottom: 17px;
+
   width: 100%;
   font-family: Roboto;
   font-size: 12px;
@@ -159,13 +160,10 @@
   outline: 1px;
 }
 .form-policy {
-  @media (max-width: 1199px) {
-    display: block;
-    align-items: center;
-  }
-  @media (min-width: 1199px) {
-    margin-left: 10px;
-  }
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  line-height: 1;
 }
 .form-policy__checkbox-form {
   display: flex;
@@ -189,34 +187,24 @@
   margin-right: 10px;
   border: 2px solid #212121;
   border-radius: 4px;
-
-  @media screen and (max-width: 1199px) {
-    margin-right: 0;
-  }
+  flex-shrink: 0;
+}
+.form-policy__checkbox-form:hover + .form-policy__icon,
+.form-policy__checkbox-form:focus + .form-policy__icon {
+  border: 2px solid var(--accent-color);
 }
 
 .form-policy__checkbox-form:checked + .form-policy__icon {
   background-color: var(--accent-color);
   background-image: url('../images/svg/icon-check-2.svg');
-
+  border: 2px solid var(--accent-color);
   background-size: contain;
   background-origin: border-box;
-  border-color: transparent;
+
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.form-policy {
-  margin-bottom: 30px;
-
-  @media screen and (max-width: 480px) {
-    display: block;
-    margin-left: 0;
-  }
-}
-.modal__closing-button__icon {
-  fill: #000000;
-}
 .modal__closing-button {
   position: absolute;
   width: 30px;
@@ -232,12 +220,16 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
+  color: #000000;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.modal__closing-button__icon {
+  fill: currentColor;
 }
 
-.modal__closing-button .modal__closing-button__icon:hover,
-.modal__closing-button .modal__closing-button__icon:focus {
-  fill: var(--accent-color);
-}
 /**/
 
 .modal-send__text {
